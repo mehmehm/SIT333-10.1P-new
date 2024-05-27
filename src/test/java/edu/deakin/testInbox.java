@@ -34,4 +34,18 @@ public class testInbox {
             Assert.assertEquals(currentTask.getTimeLeft(), "-");
 	        
 	}
+	
+	@Test
+	public void testTask2()
+	{
+		 taskInbox inbox = new taskInbox();
+	        List<task> tasklist = inbox.getTaskList();
+	        task currentTask = tasklist.get(1);
+            Assert.assertEquals(currentTask.getTaskNumber(), "P2");
+            Assert.assertEquals(currentTask.getDescription(), "hello world");
+            Assert.assertEquals(currentTask.getTaskType(), "pass");
+            Assert.assertEquals(currentTask.getStatus(), "completed");
+            Assert.assertEquals(currentTask.getTimeLeft(), "-");
+	        
+	}
 }
