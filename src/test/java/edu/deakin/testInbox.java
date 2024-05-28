@@ -17,6 +17,8 @@ public class testInbox {
 		inbox = new taskInbox();
 		tasklist = inbox.getTaskList();
 	}
+	
+	//make sure task inbox is being displayed
 	@Test
 	public void testGetTaskInbox()
 	{
@@ -25,10 +27,11 @@ public class testInbox {
             Assert.assertNotNull(currentTask.getDescription());
             Assert.assertNotNull(currentTask.getTaskType());
             Assert.assertNotNull(currentTask.getStatus());
-            Assert.assertNotNull(currentTask.getTimeLeft());
+            Assert.assertNotNull(currentTask.getTimeLeft()); 
         }
 	}
 	
+	//test if task 1 is correct
 	@Test
 	public void testTask1()
 	{
@@ -41,6 +44,7 @@ public class testInbox {
 	        
 	}
 	
+	//test is task 2 is correct
 	@Test
 	public void testTask3()
 	{
@@ -54,6 +58,7 @@ public class testInbox {
 	        
 	}
 	
+	//test if task 3 is correct
 	@Test
 	public void testTask4()
 	{
@@ -67,6 +72,7 @@ public class testInbox {
 	        
 	}
 	
+	//test if task 4 is correct
 	@Test
 	public void testTask2()
 	{
