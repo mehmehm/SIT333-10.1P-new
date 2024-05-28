@@ -44,7 +44,20 @@ public class testInbox {
 	        
 	}
 	
-	//test is task 2 is correct
+	//test if task 2 is correct
+	@Test
+	public void testTask2()
+	{
+        task currentTask = tasklist.get(1);
+        Assert.assertEquals(currentTask.getTaskNumber(), "P2");
+        Assert.assertEquals(currentTask.getDescription(), "hello world");
+        Assert.assertEquals(currentTask.getTaskType(), "pass");
+        Assert.assertEquals(currentTask.getStatus(), "completed");
+        Assert.assertEquals(currentTask.getTimeLeft(), "-");
+	        
+	}
+	
+	//test is task 3 is correct
 	@Test
 	public void testTask3()
 	{
@@ -58,7 +71,7 @@ public class testInbox {
 	        
 	}
 	
-	//test if task 3 is correct
+	//test if task 4 is correct
 	@Test
 	public void testTask4()
 	{
@@ -74,7 +87,7 @@ public class testInbox {
 	
 	//test if task 4 is correct
 	@Test
-	public void testTask2()
+	public void testTask5()
 	{
 		 
         task currentTask = tasklist.get(4);
